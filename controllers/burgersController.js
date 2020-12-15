@@ -10,7 +10,9 @@ router.get("/", function(req, res) {
 });
 
 router.get("/api/burgers", function(req, res) {
-    console.log(req.query.burgerName);
+    var burgerName = req.query.burgerName;
+    // console.log(req.query.burgerName);
+    burger.checkBurgerInput(burgerName);
 });
 
 
