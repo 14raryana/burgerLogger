@@ -4,5 +4,11 @@ const burger = new Burgers;
 const router = express.Router();
 
 
+router.get("/", function(req, res) {
+    console.log(req);
+    res.render("index")
+});
+
+
 
 module.exports = router;
