@@ -2,7 +2,7 @@ const ORM = require("../config/orm");
 const orm = new ORM;
 
 class Burgers {
-    selectAll() {
+    checkBurgerInput() {
         orm.selectAll()
     }
 

@@ -5,8 +5,12 @@ const router = express.Router();
 
 
 router.get("/", function(req, res) {
-    console.log(req);
-    res.render("index")
+    // console.log(req);
+    res.render("index");
+});
+
+router.get("/api/burgers", function(req, res) {
+    console.log(req.query.burgerName);
 });
 
 
