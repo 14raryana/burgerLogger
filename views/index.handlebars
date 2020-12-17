@@ -1,1 +1,28 @@
+{{!-- {{>home}}
+
+{{#if shitFace}}
+    {{>selectedBurgers}}
+{{/if}} --}}
+
+
+
+{{#if burgers}}
+    {{#each burgers}}
+        {{!-- {{#unless devoured}} --}}
+            {{>selectedBurgers}}
+        {{!-- {{/unless}} --}}
+    {{/each}}
+{{/if}}
+
 {{>home}}
+
+
+
+{{!-- {{#if selectedBurger}}
+    {{>random}}
+{{/if}} --}}
+
+{{!-- {{#if home}}
+    {{>home}}
+{{/if}} --}}
+

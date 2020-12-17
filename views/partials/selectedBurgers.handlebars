@@ -1,0 +1,12 @@
+<div class="container">
+    {{!-- {{#each this}} --}}
+    <div class="row">
+        <div class="col" style="background-color: red;">
+            <textarea readonly rows="3" cols="30" style="float: right;">{{this.burgerName}}</textarea>
+        </div>
+        <div class="col {{this.burgerName}}" style="background-color: blue;">
+            <button class="devourBtn {{this.burgerName}}" id="{{this.id}}" value="{{this.burgerName}}">Devour It!</button>
+        </div>
+    </div>
+    {{!-- {{/each}} --}}
+</div>
