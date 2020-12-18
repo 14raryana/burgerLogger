@@ -1,11 +1,14 @@
 <div class="container">
     {{!-- {{#each this}} --}}
     <div class="row">
-        <div class="col" style="background-color: red;">
-            <textarea readonly rows="3" cols="30" style="float: right;">{{this.burgerName}}</textarea>
+        <div class="col">
+            {{!-- <h2>Uneaten Burgers</h2> --}}
+            {{!-- <textarea class="form-control" id="exampleFormControlTextarea1 {{this.nameId}}" rows="3" style="float: right;">{{this.burgerName}}</textarea> --}}
+            <textarea readonly id="{{this.nameId}}" rows="3" cols="30" style="float:right;">{{this.burgerName}}</textarea>
         </div>
-        <div class="col {{this.burgerName}}" style="background-color: blue;">
-            <button class="devourBtn {{this.burgerName}}" id="{{this.id}}" value="{{this.burgerName}}">Devour It!</button>
+        <div class="col {{this.nameId}}">
+            {{!-- <h2>Already Eaten Burgers</h2> --}}
+            <button class="devourBtn {{this.nameId}}" id="{{this.id}}" value="{{this.nameId}}">Devour It!</button>
         </div>
     </div>
     {{!-- {{/each}} --}}

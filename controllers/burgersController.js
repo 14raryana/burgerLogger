@@ -13,7 +13,11 @@ const router = express.Router();
 router.get("/", function(req, res) {
     burger.getAll().then(function(burgers) {
         if(burgers.length > 0) {
-            console.log(burgers);
+            // console.log(burgers);
+            burgers.forEach((burger) => {
+                burger.nameId = burger.burgerName.replace(/\s+/g, '');
+            });
+            console.log(burgers)
             console.log("THIS IS THE BURGERS VAR IN ROUTER")
             res.render("index", {burgers});
         }

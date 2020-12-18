@@ -90,12 +90,16 @@ $(function() {
 
     $(".devourBtn").on("click", function(event) {
         // alert(this.find(`.${this.}`))
-        var random = "SHit face";
+        // var random = "SHit face";
         // alert(random)
-        var hello = random.replace(/\s+/g, '');
+        // var hello = random.replace(/\s+/g, '');
         // alert(hello);
-        var burgerName = this.value
-        $(`.${burgerName}`).hide();
+        // var burgerName = this.value
+        $(`.${this.value}`).hide();
+
+        document.getElementById(`${this.value}`).disabled = true;
+
+        // $(`#${this.value}`).disabled = true;
 
 
 
