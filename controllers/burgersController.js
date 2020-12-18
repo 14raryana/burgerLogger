@@ -21,6 +21,9 @@ router.get("/", function(req, res) {
             console.log("THIS IS THE BURGERS VAR IN ROUTER")
             res.render("index", {burgers});
         }
+        else {
+            res.render("index");
+        }
         // console.log({burgers});
     });
 })
